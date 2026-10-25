@@ -112,7 +112,11 @@ struct ContentView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 14, style: .continuous).fill(LinearGradient(colors: [ForgeColors.emerald, ForgeColors.glass], startPoint: .topLeading, endPoint: .bottomTrailing))
                     RoundedRectangle(cornerRadius: 14, style: .continuous).strokeBorder(ForgeColors.mint.opacity(0.28), lineWidth: 1)
-                    Image(systemName: "sparkle").font(.system(size: 20, weight: .bold)).foregroundStyle(ForgeColors.mint)
+                    Image("ForgeMark")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 42, height: 42)
+                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                 }.frame(width: 42, height: 42)
                 VStack(alignment: .leading, spacing: 3) {
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
