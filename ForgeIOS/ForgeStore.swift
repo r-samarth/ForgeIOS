@@ -40,9 +40,14 @@ final class ForgeStore: ObservableObject {
         guard let bytes = try? JSONEncoder.forge.encode(data).count else { return "—" }
         return String(format: "%.1f KB", Double(bytes) / 1024)
     }
-    var midnightCountdown: String {
-        let nextDay = ForgeDate.calendar.date(byAdding: .day, value: 1, to: ForgeDate.startOfDay(Date())) ?? Date()
-        let seconds = max(0, Int(nextDay.timeIntervalSince(Date())))
+    var midnightCountdown: String { midnightCountdown(at: Date()) }
+
+    /// Counts down to the next midnight in the iPhone's current local time zone.
+    /// The supplied date is provided by TimelineView so this label updates every second.
+    func midnightCountdown(at now: Date) -> String {
+        let startOfToday = ForgeDate.calendar.startOfDay(for: now)
+        let nextMidnight = ForgeDate.calendar.date(byAdding: .day, value: 1, to: startOfToday) ?? now
+        let seconds = max(0, Int(ceil(nextMidnight.timeIntervalSince(now))))
         return String(format: "%02d:%02d:%02d", seconds / 3600, (seconds % 3600) / 60, seconds % 60)
     }
 
