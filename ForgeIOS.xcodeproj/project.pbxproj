@@ -1,0 +1,180 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000011 /* ForgeIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000021 /* ForgeIOSApp.swift */; };
+		000000000000000000000012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000022 /* ContentView.swift */; };
+		000000000000000000000013 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000023 /* Models.swift */; };
+		000000000000000000000014 /* ForgeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000024 /* ForgeStore.swift */; };
+		000000000000000000000015 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000025 /* Components.swift */; };
+		000000000000000000000016 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000026 /* TodayView.swift */; };
+		000000000000000000000017 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000027 /* AnalyticsView.swift */; };
+		000000000000000000000018 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000028 /* HistoryView.swift */; };
+		000000000000000000000019 /* VaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000029 /* VaultView.swift */; };
+		00000000000000000000001A /* HabitEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002B /* HabitEditorView.swift */; };
+		00000000000000000000001B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000021 /* ForgeIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeIOSApp.swift; sourceTree = "<group>"; };
+		000000000000000000000022 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000023 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		000000000000000000000024 /* ForgeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgeStore.swift; sourceTree = "<group>"; };
+		000000000000000000000025 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		000000000000000000000026 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		000000000000000000000027 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		000000000000000000000028 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		000000000000000000000029 /* VaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultView.swift; sourceTree = "<group>"; };
+		00000000000000000000002B /* HabitEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitEditorView.swift; sourceTree = "<group>"; };
+		00000000000000000000002C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00000000000000000000002A /* ForgeIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForgeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00000000000000000000000E /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000003 /* ForgeIOS */,
+				000000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* ForgeIOS */ = {
+			isa = PBXGroup;
+			path = ForgeIOS;
+			sourceTree = "<group>";
+			children = (
+				000000000000000000000021 /* ForgeIOSApp.swift */,
+				000000000000000000000022 /* ContentView.swift */,
+				000000000000000000000023 /* Models.swift */,
+				000000000000000000000024 /* ForgeStore.swift */,
+				000000000000000000000025 /* Components.swift */,
+				000000000000000000000026 /* TodayView.swift */,
+				000000000000000000000027 /* AnalyticsView.swift */,
+				000000000000000000000028 /* HistoryView.swift */,
+				000000000000000000000029 /* VaultView.swift */,
+				00000000000000000000002B /* HabitEditorView.swift */,
+				00000000000000000000002C /* Assets.xcassets */,
+			);
+		};
+		000000000000000000000004 /* Products */ = {isa = PBXGroup; children = (00000000000000000000002A /* ForgeIOS.app */,); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000006 /* ForgeIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000008 /* Build configuration list for PBXNativeTarget */;
+			buildPhases = (
+				00000000000000000000000D /* Sources */,
+				00000000000000000000000E /* Frameworks */,
+				00000000000000000000000F /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = ForgeIOS;
+			productName = ForgeIOS;
+			productReference = 00000000000000000000002A /* ForgeIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; TargetAttributes = {000000000000000000000006 = {CreatedOnToolsVersion = 16.0; };};};
+			buildConfigurationList = 000000000000000000000007 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base,);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (000000000000000000000006 /* ForgeIOS */,);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000000F /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (00000000000000000000001B /* Assets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00000000000000000000000D /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			000000000000000000000011 /* ForgeIOSApp.swift in Sources */,
+			000000000000000000000012 /* ContentView.swift in Sources */,
+			000000000000000000000013 /* Models.swift in Sources */,
+			000000000000000000000014 /* ForgeStore.swift in Sources */,
+			000000000000000000000015 /* Components.swift in Sources */,
+			000000000000000000000016 /* TodayView.swift in Sources */,
+			000000000000000000000017 /* AnalyticsView.swift in Sources */,
+			000000000000000000000018 /* HistoryView.swift in Sources */,
+			000000000000000000000019 /* VaultView.swift in Sources */,
+			00000000000000000000001A /* HabitEditorView.swift in Sources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000009 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			CLANG_ENABLE_MODULES = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			SDKROOT = iphoneos;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Debug; };
+		00000000000000000000000A /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			CLANG_ENABLE_MODULES = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			SDKROOT = iphoneos;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Release; };
+		00000000000000000000000B /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = Forge;
+			INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = dev.samarth.forgeios;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Debug; };
+		00000000000000000000000C /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = Forge;
+			INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = dev.samarth.forgeios;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000007 /* Build configuration list for PBXProject */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000009 /* Debug */, 00000000000000000000000A /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000008 /* Build configuration list for PBXNativeTarget */ = {isa = XCConfigurationList; buildConfigurations = (00000000000000000000000B /* Debug */, 00000000000000000000000C /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
