@@ -124,7 +124,12 @@ struct ContentView: View {
                 Spacer(minLength: 2)
                 VStack(alignment: .trailing, spacing: 4) {
                     Label("12 AM RESET", systemImage: "clock").font(.system(size: 8, weight: .bold, design: .rounded)).tracking(0.55).foregroundStyle(ForgeColors.sage)
-                    Text(store.midnightCountdown).font(.system(size: 12, weight: .bold, design: .monospaced)).foregroundStyle(ForgeColors.mint).monospacedDigit()
+                    TimelineView(.periodic(from: .now, by: 1)) { context in
+                        Text(store.midnightCountdown(at: context.date))
+                            .font(.system(size: 12, weight: .bold, design: .monospaced))
+                            .foregroundStyle(ForgeColors.mint)
+                            .monospacedDigit()
+                    }
                 }
                 .padding(.horizontal, 10).padding(.vertical, 8)
                 .background(ForgeColors.glass.opacity(0.65), in: RoundedRectangle(cornerRadius: 13))
