@@ -100,12 +100,14 @@ struct ForgeBackup: Codable {
 }
 
 enum ForgeDate {
-    static let calendar: Calendar = {
+    // Always follow the device's current calendar and time zone, including updates
+    // made in iOS Settings while Forge is installed.
+    static var calendar: Calendar {
         var calendar = Calendar(identifier: .gregorian)
-        calendar.locale = Locale(identifier: "en_US_POSIX")
-        calendar.timeZone = .current
+        calendar.locale = .autoupdatingCurrent
+        calendar.timeZone = .autoupdatingCurrent
         return calendar
-    }()
+    }
 
     static func startOfDay(_ date: Date) -> Date { calendar.startOfDay(for: date) }
 
