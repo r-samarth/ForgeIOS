@@ -65,7 +65,7 @@ final class ForgeStore: ObservableObject {
     }
 
     func selectDate(_ date: Date) { selectedDate = ForgeDate.startOfDay(date) }
-    func lastSevenDays() -> [Date] { (6...0).map { ForgeDate.addingDays(-$0, to: effectiveToday) } }
+    func lastSevenDays() -> [Date] { stride(from: 6, through: 0, by: -1).map { ForgeDate.addingDays(-$0, to: effectiveToday) } }
 
     func isCompleted(_ habitID: String, on date: Date) -> Bool {
         data.logs[ForgeDate.key(date), default: []].contains(habitID)
