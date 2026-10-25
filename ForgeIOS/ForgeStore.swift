@@ -17,14 +17,16 @@ final class ForgeStore: ObservableObject {
     private let storageKey = "forge_habit_engine_v1"
 
     init() {
+        let restoredData: ForgeData
         if let stored = UserDefaults.standard.data(forKey: storageKey),
            let loaded = try? JSONDecoder.forge.decode(ForgeData.self, from: stored) {
-            data = loaded
+            restoredData = loaded
         } else {
-            data = .fresh()
+            restoredData = .fresh()
         }
-        let todayWithOffset = ForgeDate.calendar.date(byAdding: .day, value: data.simulatedDayOffset, to: Date()) ?? Date()
-        selectedDate = ForgeDate.startOfDay(todayWithOffset)
+        self.data = restoredData
+        let todayWithOffset = ForgeDate.calendar.date(byAdding: .day, value: restoredData.simulatedDayOffset, to: Date()) ?? Date()
+        self.selectedDate = ForgeDate.startOfDay(todayWithOffset)
         checkDayRollover()
         persist()
     }
