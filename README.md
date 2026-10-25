@@ -17,7 +17,7 @@
 
 Forge stores data on the device using `UserDefaults` and JSON encoding. There is no login, analytics SDK, remote database or cloud sync configured. Export a backup before deleting the app or moving to another device; app-local data is not automatically transferred to another installation.
 
-The countdown and focus timer are app UI features, not background push notifications. The focus timer recalculates from its deadline when Forge becomes active again. The simulator changes Forge's effective date for testing and can be reset from the Vault tab.
+The midnight countdown uses the iPhone's current local clock and time zone, refreshes each second while the app is visible, and targets the next local midnight. On app launch/resume, Forge compares the saved last-active date with the device date and updates to a fresh day. Completion marks are keyed by local calendar date, so yesterday's marks remain in history and do not appear as completed today. The focus timer is an in-app feature, not a background push notification; it recalculates from its deadline when Forge becomes active again. The Vault's day-rollover simulator is for testing only; use Sync real clock to leave simulation mode.
 
 ## Build with Xcode
 
